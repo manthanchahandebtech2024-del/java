@@ -1,28 +1,24 @@
 package day2;
 
-import java.util.Scanner;
-
 public class prog3 {
     
-    // Function to add two float numbers and return result as double
+    // To accept two float parameters and returns double
     public static double addNumbers(float num1, float num2) {
-        return (double) (num1 + num2);
+        // Converting float to double and performing addition
+        double result = (double)num1 + (double)num2;
+        return result;
     }
     
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        float a = 10.5f;
+        float b = 20.3f;
         
-        System.out.print("Enter first number (float): ");
-        float firstNum = sc.nextFloat();
+        // Pass float variables to function and get result as double
+        double sum = addNumbers(a, b);
         
-        System.out.print("Enter second number (float): ");
-        float secondNum = sc.nextFloat();
-        
-        // Call function and store result in double
-        double result = addNumbers(firstNum, secondNum);
-        
-        System.out.println("Addition result: " + firstNum + " + " + secondNum + " = " + result);
-        
-        sc.close();
+        // Display the result
+        System.out.println("First number (float): " + a);
+        System.out.println("Second number (float): " + b);
+        System.out.println("Sum (double): " + sum);
     }
 }
