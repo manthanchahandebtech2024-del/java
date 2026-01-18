@@ -26,7 +26,7 @@ class Child extends Parent {
     }
     
     void displayChildInfo() {
-        displayParentInfo();  // Call parent method
+        displayParentInfo();  
         System.out.println("School: " + school);
     }
 }
