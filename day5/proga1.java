@@ -1,8 +1,4 @@
-// Program to demonstrate Final Class, Final Method, and Final Variable in Java
-
-// Final Class - Cannot be extended/inherited
 final class Student {
-    // Final variable - Cannot be modified after initialization
     private final String studentId;
     private final String name;
     private int marks;

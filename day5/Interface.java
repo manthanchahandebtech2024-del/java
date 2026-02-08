@@ -40,7 +40,6 @@ class Bat implements Mammal, Bird {
     }
 }
 
-// Another implementation
 class Duck implements Mammal, Bird {
     
     @Override
@@ -69,7 +68,7 @@ public class Interface {
         System.out.println("===== DIAMOND PROBLEM SOLUTION USING INTERFACES =====\n");
         
         // Bat object
-        System.out.println("--- BAT ---");
+        System.out.println("-- BAT --");
         Bat bat = new Bat();
         bat.eat();
         bat.sleep();
@@ -85,20 +84,12 @@ public class Interface {
         duck.fly();
         
         // Polymorphism demonstration
-        System.out.println("\n--- POLYMORPHISM ---");
+        System.out.println("\n- POLYMORPHISM -");
         Animal[] animals = {bat, duck};
         
         for (Animal animal : animals) {
             animal.eat();
             animal.sleep();
         }
-        
-        System.out.println("\n===== KEY POINTS =====");
-        System.out.println("1. Diamond Problem: Multiple inheritance conflict avoided");
-        System.out.println("2. Interfaces Mammal and Bird both extend Animal");
-        System.out.println("3. Bat and Duck implement both Mammal and Bird interfaces");
-        System.out.println("4. No ambiguity because interfaces have no implementation");
-        System.out.println("5. Each class provides its own implementation of inherited methods");
-        System.out.println("6. Multiple interface implementation is supported in Java");
-    }
+      
 }
