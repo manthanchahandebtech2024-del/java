@@ -1,3 +1,4 @@
+package day8;
 public class TryCatchExample{
      public static void main(String[] args){
          int num1 = 10;
