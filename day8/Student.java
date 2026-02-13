@@ -73,7 +73,7 @@ class GradeManager {
 }
 
 // --- 3. Main Class ---
-public class Main {
+class StudentMain {
     public static void main(String[] args) {
         GradeManager manager = new GradeManager();
 
